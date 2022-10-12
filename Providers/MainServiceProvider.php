@@ -2,7 +2,7 @@
 
 namespace App\Containers\Vendor\Livewire\Providers;
 
-use App\Containers\Vendor\Debugger\Tasks\QueryDebuggerTask;
+//use App\Containers\Vendor\Debugger\Tasks\QueryDebuggerTask;
 use App\Ship\Parents\Providers\MainServiceProvider as MainProvider;
 use Jenssegers\Agent\AgentServiceProvider;
 use Jenssegers\Agent\Facades\Agent;
@@ -48,6 +48,6 @@ class MainServiceProvider extends MainProvider
     public function register(): void
     {
         parent::register();
-            app(QueryDebuggerTask::class)->run();
+            //app(QueryDebuggerTask::class)->run();
     }
 }
