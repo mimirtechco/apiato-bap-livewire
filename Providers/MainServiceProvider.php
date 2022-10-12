@@ -3,7 +3,7 @@
 namespace App\Containers\Vendor\Livewire\Providers;
 
 use App\Containers\Vendor\Debugger\Tasks\QueryDebuggerTask;
-use App\Ship\Parents\Providers\MainServiceProvider as ApiatoMainServiceProvider;
+use App\Ship\Parents\Providers\MainServiceProvider as MainProvider;
 use Jenssegers\Agent\AgentServiceProvider;
 use Jenssegers\Agent\Facades\Agent;
 use App\Containers\Vendor\Livewire\Providers\LivewireViewsProvider;
@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Blade;
  *
  * @author  Mahmoud Zalt <mahmoud@zalt.me>
  */
-class MainServiceProvider extends ApiatoMainServiceProvider
+class MainServiceProvider extends MainProvider
 {
     /**
      * Container Service Providers.
