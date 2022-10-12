@@ -49,7 +49,7 @@ class ViewGenerator extends ExtendedGeneratorCommand implements ComponentsGenera
     /**
      * @return array
      */
-    public function getUserInputs()
+    public function getUserInputs(): ?array
     {
         return [
             'path-parameters' => [

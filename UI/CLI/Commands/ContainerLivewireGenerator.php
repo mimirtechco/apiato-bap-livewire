@@ -64,7 +64,7 @@ class ContainerLivewireGenerator extends ExtendedGeneratorCommand implements Com
     /**
      * @return array
      */
-    public function getUserInputs()
+    public function getUserInputs(): ?array
     {
         $component_name = $this->checkParameterOrAsk('component_name', 'Enter the name of the Component', '');
 

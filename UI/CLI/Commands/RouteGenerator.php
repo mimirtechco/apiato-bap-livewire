@@ -56,7 +56,7 @@ class RouteGenerator extends ExtendedGeneratorCommand implements ComponentsGener
     /**
      * @return  array
      */
-    public function getUserInputs()
+    public function getUserInputs(): ?array
     {
         $ui = Str::lower($this->checkParameterOrChoice('ui', 'Select the UI for the controller', ['API', 'WEB'], 0));
         $version = $this->checkParameterOrAsk('docversion', 'Enter the endpoint version (integer)', 1);
